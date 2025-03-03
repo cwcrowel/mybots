@@ -7,10 +7,12 @@ import pybullet_data
 import pyrosim.pyrosim as pyrosim
 import numpy
 import constants as c
+from pyrosim.neuralNetwork import NEURAL_NETWORK
 
 class ROBOT:
     def __init__(self, server):
         self.robotId = p.loadURDF("body.urdf")
+        self.nn = NEURAL_NETWORK("brain.nndf")
 
     def Prepare_To_Sense(self):
         self.sensors = {}
@@ -33,3 +35,7 @@ class ROBOT:
         for i in self.motors:
             self.motorValues = self.motors.get(i).Set_Value(robotId, t)
         print(self.motors)
+
+    def Think(self):
+        self.nn.Update()
+        self.nn.Print()
