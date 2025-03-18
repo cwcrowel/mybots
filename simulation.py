@@ -30,7 +30,7 @@ class SIMULATION:
             p.stepSimulation()
             self.robot.Sense(t)
             self.robot.Think()
-            self.robot.Act(self.robot.robotId)
+            self.robot.Act(t)
 
             time.sleep(0.01)
             #print(t)
