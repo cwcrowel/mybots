@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8b4b995-9366-4096-bfd1-a8abb1105976" name="Changes" comment="Assignment 8 - Completed">
+      <change afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrosim/neuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyrosim/neuralNetwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyrosim/neuron.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyrosim/neuron.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cwcrowel&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cwcrowel/mybots.git&quot;,
+    &quot;accountId&quot;: &quot;dfc95860-4273-4cd4-9e4a-24c73fb100d3&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/matplotlib/pyplot.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2rtc86NAewzm6O29DtCnBLj9uU8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.analyze.executor": "Run",
+    "Python.generate.executor": "Run",
+    "Python.motor.executor": "Run",
+    "Python.neuralNetwork.executor": "Run",
+    "Python.neuron.executor": "Run",
+    "Python.robot.executor": "Run",
+    "Python.search.executor": "Run",
+    "Python.sensor.executor": "Run",
+    "Python.simulate.executor": "Run",
+    "Python.simulation.executor": "Run",
+    "Python.world.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "randomsearch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "PyConsoleConfigurable.Python Console",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="mybots" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="mybots" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8b4b995-9366-4096-bfd1-a8abb1105976" name="Changes" comment="" />
+      <created>1737381650340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737381650340</updated>
+      <workItem from="1737381664207" duration="1141000" />
+      <workItem from="1737416493912" duration="2330000" />
+      <workItem from="1737419359784" duration="296000" />
+      <workItem from="1737419761666" duration="875000" />
+      <workItem from="1738022960230" duration="299000" />
+      <workItem from="1738023263582" duration="269000" />
+      <workItem from="1738024586983" duration="379000" />
+      <workItem from="1738024973149" duration="4429000" />
+      <workItem from="1738528295806" duration="5592000" />
+      <workItem from="1738534205469" duration="70000" />
+      <workItem from="1738539057702" duration="672000" />
+      <workItem from="1739212523534" duration="13000" />
+      <workItem from="1739212541025" duration="60000" />
+      <workItem from="1739229629803" duration="899000" />
+      <workItem from="1739230536359" duration="1082000" />
+      <workItem from="1739242097195" duration="1549000" />
+      <workItem from="1739243691630" duration="245000" />
+      <workItem from="1739244037194" duration="140000" />
+      <workItem from="1739244183979" duration="1440000" />
+      <workItem from="1739245674074" duration="3034000" />
+      <workItem from="1739291653616" duration="253000" />
+      <workItem from="1739553046466" duration="277000" />
+      <workItem from="1739553448614" duration="5988000" />
+      <workItem from="1739831241261" duration="3930000" />
+      <workItem from="1739849230748" duration="138000" />
+      <workItem from="1739885379010" duration="2000" />
+      <workItem from="1739891075163" duration="18000" />
+      <workItem from="1740437966617" duration="11930000" />
+      <workItem from="1740620558673" duration="12550000" />
+      <workItem from="1741617719691" duration="11133000" />
+      <workItem from="1742176397311" duration="6083000" />
+    </task>
+    <task id="LOCAL-00001" summary="pyrosim">
+      <created>1738023342222</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738023342223</updated>
+    </task>
+    <task id="LOCAL-00002" summary="box inserted in simulation">
+      <created>1738025610752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738025610752</updated>
+    </task>
+    <task id="LOCAL-00003" summary="one block tower">
+      <created>1738028065554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738028065554</updated>
+    </task>
+    <task id="LOCAL-00004" summary="25 block towers">
+      <created>1738029048600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738029048601</updated>
+    </task>
+    <task id="LOCAL-00005" summary="body created">
+      <created>1738534015318</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738534015318</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added analyze.py">
+      <created>1739244463721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739244463721</updated>
+    </task>
+    <task id="LOCAL-00007" summary="assignment 4 updtes">
+      <created>1739248706518</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739248706518</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Assignment 5 - no movement">
+      <option name="closed" value="true" />
+      <created>1739554609371</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739554609371</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Assignment 5 - step 39">
+      <option name="closed" value="true" />
+      <created>1739559770744</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739559770744</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Assignment 5 - completed">
+      <option name="closed" value="true" />
+      <created>1739843654996</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739843654996</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Assignment 6 - completed">
+      <option name="closed" value="true" />
+      <created>1740457995839</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740457995839</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Completed Simulating sensor neurons section">
+      <option name="closed" value="true" />
+      <created>1740969881373</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740969881373</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Assignment 7 - Completed">
+      <option name="closed" value="true" />
+      <created>1741062041306</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741062041306</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Assignment 8 - Completed">
+      <option name="closed" value="true" />
+      <created>1741665140168</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741665140168</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pyrosim" />
+    <MESSAGE value="box inserted in simulation" />
+    <MESSAGE value="one block tower" />
+    <MESSAGE value="25 block towers" />
+    <MESSAGE value="body created" />
+    <MESSAGE value="added analyze.py" />
+    <MESSAGE value="assignment 4 updtes" />
+    <MESSAGE value="Assignment 5 - no movement" />
+    <MESSAGE value="Assignment 5 - step 39" />
+    <MESSAGE value="Assignment 5 - completed" />
+    <MESSAGE value="Assignment 6 - completed" />
+    <MESSAGE value="Completed Simulating sensor neurons section" />
+    <MESSAGE value="Assignment 7 - Completed" />
+    <MESSAGE value="Assignment 8 - Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 8 - Completed" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mybots$neuralNetwork.coverage" NAME="neuralNetwork Coverage Results" MODIFIED="1741059308615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyrosim" />
+    <SUITE FILE_PATH="coverage/mybots$simulation.coverage" NAME="simulation Coverage Results" MODIFIED="1742264486624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$neuron.coverage" NAME="neuron Coverage Results" MODIFIED="1741659857969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyrosim" />
+    <SUITE FILE_PATH="coverage/mybots$robot.coverage" NAME="robot Coverage Results" MODIFIED="1740449588431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$motor.coverage" NAME="motor Coverage Results" MODIFIED="1740455676038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$world.coverage" NAME="world Coverage Results" MODIFIED="1740449592251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$sensor.coverage" NAME="sensor Coverage Results" MODIFIED="1740453549598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$simulate.coverage" NAME="simulate Coverage Results" MODIFIED="1742264944759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1739841639427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$search.coverage" NAME="search Coverage Results" MODIFIED="1742264609176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$generate.coverage" NAME="generate Coverage Results" MODIFIED="1742264187463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
