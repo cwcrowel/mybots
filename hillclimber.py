@@ -23,10 +23,6 @@ class HILL_CLIMBER:
 
     def Mutate(self):
         self.child.Mutate()
-        print('parent weights: ', self.parent.weights)
-        print('child weights: ', self.child.weights)
-        print('parent fitness: ', self.parent.fitness)
-        print('child fitness: ', self.child.fitness)
 
 
     def Select(self):
@@ -34,4 +30,4 @@ class HILL_CLIMBER:
             self.parent = self.child
 
     def Print(self):
-        print("parent = " + str(self.parent.fitness) + " and child = " + str(self.child.fitness))
+        print("\nparent = " + str(self.parent.fitness) + " and child = " + str(self.child.fitness))

@@ -12,7 +12,7 @@ from robot import ROBOT
 class SIMULATION:
     def __init__(self):
 
-        self.physicsClient = p.connect(p.GUI)
+        self.physicsClient = p.connect(p.DIRECT)
         p.configureDebugVisualizer(p.COV_ENABLE_GUI,0)
         p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
