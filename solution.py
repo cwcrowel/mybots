@@ -18,8 +18,11 @@ class SOLUTION:
         self.Create_Body()
         self.Create_Brain(self.myID)
         os.system(f"python3 simulate.py {directOrGUI} {str(self.myID)} &")
-        f = open('fitness.txt', 'r')
+        while not os.path.exists(f'fitness{str(self.myID)}.txt'):
+            time.sleep(0.01)
+        f = open(f'fitness{str(self.myID)}.txt', 'r')
         self.fitness = float(f.read().strip())
+        print(self.fitness)
         f.close()
 
     def Create_World(self):
