@@ -8,15 +8,16 @@ import os
 import random
 
 class SOLUTION:
-    def __init__(self):
+    def __init__(self, nextAvailableID):
         self.weights = numpy.random.rand(3, 2)
         self.weights = self.weights * 2 - 1
+        self.myID = nextAvailableID
 
     def Evaluate(self, directOrGUI):
         self.Create_World()
         self.Create_Body()
-        self.Create_Brain()
-        os.system("python3 simulate.py " + directOrGUI + " &")
+        self.Create_Brain(self.myID)
+        os.system(f"python3 simulate.py {directOrGUI} {str(self.myID)} &")
         f = open('fitness.txt', 'r')
         self.fitness = float(f.read().strip())
         f.close()
@@ -37,8 +38,8 @@ class SOLUTION:
         pyrosim.Send_Cube(name="BackLeg", pos=[-0.5, 0, -0.5], size=[1, 1, 1])
         pyrosim.End()
 
-    def Create_Brain(self):
-        pyrosim.Start_NeuralNetwork("brain.nndf")
+    def Create_Brain(self, id):
+        pyrosim.Start_NeuralNetwork(f"brain{id}.nndf")
         pyrosim.Send_Sensor_Neuron(name=0, linkName="Torso")
         pyrosim.Send_Sensor_Neuron(name=1, linkName="BackLeg")
         pyrosim.Send_Sensor_Neuron(name=2, linkName="FrontLeg")
@@ -55,3 +56,7 @@ class SOLUTION:
         randRow = random.randint(0, 2)
         randCol = random.randint(0, 1)
         self.weights[randRow][randCol] = random.random()*2 - 1
+
+    # TODO: fix this?
+    def Set_ID(self):
+        self.myID

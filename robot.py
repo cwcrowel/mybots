@@ -8,11 +8,13 @@ import pyrosim.pyrosim as pyrosim
 import numpy
 import constants as c
 from pyrosim.neuralNetwork import NEURAL_NETWORK
+import os
 
 class ROBOT:
-    def __init__(self, server):
+    def __init__(self, server, solutionID):
         self.robotId = p.loadURDF("body.urdf")
-        self.nn = NEURAL_NETWORK("brain.nndf")
+        self.nn = NEURAL_NETWORK((f"brain{solutionID}.nndf"))
+        os.system(f"rm brain{solutionID}.nndf")
 
     def Prepare_To_Sense(self):
         self.sensors = {}
