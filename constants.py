@@ -9,4 +9,4 @@ sleepTime = 0.001
 targetAngles = numpy.linspace(-numpy.pi, numpy.pi, 1000)
 
 numberOfGenerations = 10
-populationSize = 2
+populationSize = 10

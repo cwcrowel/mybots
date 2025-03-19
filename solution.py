@@ -13,17 +13,35 @@ class SOLUTION:
         self.weights = self.weights * 2 - 1
         self.myID = nextAvailableID
 
-    def Evaluate(self, directOrGUI):
+    # def Evaluate(self, directOrGUI):
+    #     self.Create_World()
+    #     self.Create_Body()
+    #     self.Create_Brain(self.myID)
+    #     os.system(f"python3 simulate.py {directOrGUI} {str(self.myID)} &")
+    #
+    #     while not os.path.exists(f'fitness{str(self.myID)}.txt'):
+    #         time.sleep(0.01)
+    #
+    #     f = open(f'fitness{str(self.myID)}.txt', 'r')
+    #     self.fitness = float(f.read().strip())
+    #     print(self.fitness)
+    #     f.close()
+
+    def Start_Simulation(self, directOrGUI):
         self.Create_World()
         self.Create_Body()
         self.Create_Brain(self.myID)
         os.system(f"python3 simulate.py {directOrGUI} {str(self.myID)} &")
+
+    def Wait_For_Simulation_To_End(self):
         while not os.path.exists(f'fitness{str(self.myID)}.txt'):
             time.sleep(0.01)
+
         f = open(f'fitness{str(self.myID)}.txt', 'r')
         self.fitness = float(f.read().strip())
         print(self.fitness)
         f.close()
+        os.system(f"rm fitness{str(self.myID)}.txt")
 
     def Create_World(self):
         pyrosim.Start_SDF("world.sdf")
