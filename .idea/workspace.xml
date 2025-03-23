@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8b4b995-9366-4096-bfd1-a8abb1105976" name="Changes" comment="Assignment 9 - hill climber steps 1-72">
+    <list default="true" id="c8b4b995-9366-4096-bfd1-a8abb1105976" name="Changes" comment="Assignment 9 - PHC completed but remember to look at os calls at top of PHC.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hillclimber.py" beforeDir="false" afterPath="$PROJECT_DIR$/hillclimber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyrosim/neuron.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyrosim/neuron.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +86,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hillclimber&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;parallelHC&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -161,7 +154,8 @@
       <workItem from="1742176397311" duration="6976000" />
       <workItem from="1742265983347" duration="10487000" />
       <workItem from="1742328156623" duration="3624000" />
-      <workItem from="1742344539423" duration="3868000" />
+      <workItem from="1742344539423" duration="12040000" />
+      <workItem from="1742473628239" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="pyrosim">
       <created>1738023342222</created>
@@ -300,7 +294,63 @@
       <option name="project" value="LOCAL" />
       <updated>1742328754441</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Assignment 9 - hill climber steps 73-77">
+      <option name="closed" value="true" />
+      <created>1742349470413</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742349470413</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Assignment 9 - hill climber completed">
+      <option name="closed" value="true" />
+      <created>1742350527471</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1742350527471</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Assignment 9 - housekeeping">
+      <option name="closed" value="true" />
+      <created>1742350730463</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1742350730463</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Assignment 9 - PHC steps 1-29">
+      <option name="closed" value="true" />
+      <created>1742351647565</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742351647565</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Assignment 9 - PHC steps 30-46">
+      <option name="closed" value="true" />
+      <created>1742352975390</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1742352975390</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Assignment 9 - PHC steps 47-54">
+      <option name="closed" value="true" />
+      <created>1742355359362</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1742355359362</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Assignment 9 - PHC completed but remember to look at os calls at top of PHC.py">
+      <option name="closed" value="true" />
+      <created>1742357168169</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1742357168169</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +385,14 @@
     <MESSAGE value="Assignment 9 - random search completed" />
     <MESSAGE value="Assignment 9 - random search completed?" />
     <MESSAGE value="Assignment 9 - hill climber steps 1-72" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 9 - hill climber steps 1-72" />
+    <MESSAGE value="Assignment 9 - hill climber steps 73-77" />
+    <MESSAGE value="Assignment 9 - hill climber completed" />
+    <MESSAGE value="Assignment 9 - housekeeping" />
+    <MESSAGE value="Assignment 9 - PHC steps 1-29" />
+    <MESSAGE value="Assignment 9 - PHC steps 30-46" />
+    <MESSAGE value="Assignment 9 - PHC steps 47-54" />
+    <MESSAGE value="Assignment 9 - PHC completed but remember to look at os calls at top of PHC.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 9 - PHC completed but remember to look at os calls at top of PHC.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mybots$solution.coverage" NAME="solution Coverage Results" MODIFIED="1742268151819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -343,13 +400,13 @@
     <SUITE FILE_PATH="coverage/mybots$neuron.coverage" NAME="neuron Coverage Results" MODIFIED="1741659857969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyrosim" />
     <SUITE FILE_PATH="coverage/mybots$motor.coverage" NAME="motor Coverage Results" MODIFIED="1740455676038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$sensor.coverage" NAME="sensor Coverage Results" MODIFIED="1740453549598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mybots$search.coverage" NAME="search Coverage Results" MODIFIED="1742348043108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$search.coverage" NAME="search Coverage Results" MODIFIED="1742473761638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$neuralNetwork.coverage" NAME="neuralNetwork Coverage Results" MODIFIED="1741059308615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyrosim" />
     <SUITE FILE_PATH="coverage/mybots$robot.coverage" NAME="robot Coverage Results" MODIFIED="1740449588431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$hillclimber.coverage" NAME="hillclimber Coverage Results" MODIFIED="1742326464119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$world.coverage" NAME="world Coverage Results" MODIFIED="1740449592251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mybots$simulate.coverage" NAME="simulate Coverage Results" MODIFIED="1742271251283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$simulate.coverage" NAME="simulate Coverage Results" MODIFIED="1742353378174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1739841639427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mybots$generate.coverage" NAME="generate Coverage Results" MODIFIED="1742344400689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$generate.coverage" NAME="generate Coverage Results" MODIFIED="1742349205916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
