@@ -10,3 +10,6 @@ targetAngles = numpy.linspace(-numpy.pi, numpy.pi, 1000)
 
 numberOfGenerations = 10
 populationSize = 10
+
+numSensorNeurons = 3
+numMotorNeurons = 2
