@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8b4b995-9366-4096-bfd1-a8abb1105976" name="Changes" comment="Assignment 10 - housekeeping">
+    <list default="true" id="c8b4b995-9366-4096-bfd1-a8abb1105976" name="Changes" comment="Assignment 10 - steps 1-34">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyrosim/joint.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyrosim/joint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyrosim/pyrosim.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyrosim/pyrosim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +159,7 @@
       <workItem from="1742328156623" duration="3624000" />
       <workItem from="1742344539423" duration="12040000" />
       <workItem from="1742473628239" duration="160000" />
-      <workItem from="1742756651765" duration="6866000" />
+      <workItem from="1742756651765" duration="15822000" />
     </task>
     <task id="LOCAL-00001" summary="pyrosim">
       <created>1738023342222</created>
@@ -363,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742759521187</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Assignment 10 - steps 1-34">
+      <option name="closed" value="true" />
+      <created>1742769311293</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1742769311293</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pyrosim" />
     <MESSAGE value="box inserted in simulation" />
     <MESSAGE value="one block tower" />
     <MESSAGE value="25 block towers" />
@@ -406,15 +412,16 @@
     <MESSAGE value="Assignment 9 - PHC steps 47-54" />
     <MESSAGE value="Assignment 9 - PHC completed but remember to look at os calls at top of PHC.py" />
     <MESSAGE value="Assignment 10 - housekeeping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 10 - housekeeping" />
+    <MESSAGE value="Assignment 10 - steps 1-34" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 10 - steps 1-34" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mybots$solution.coverage" NAME="solution Coverage Results" MODIFIED="1742760890706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$solution.coverage" NAME="solution Coverage Results" MODIFIED="1742868198258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$simulation.coverage" NAME="simulation Coverage Results" MODIFIED="1742264486624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$neuron.coverage" NAME="neuron Coverage Results" MODIFIED="1741659857969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyrosim" />
     <SUITE FILE_PATH="coverage/mybots$motor.coverage" NAME="motor Coverage Results" MODIFIED="1740455676038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$sensor.coverage" NAME="sensor Coverage Results" MODIFIED="1740453549598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mybots$search.coverage" NAME="search Coverage Results" MODIFIED="1742768906528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mybots$search.coverage" NAME="search Coverage Results" MODIFIED="1742872580237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$neuralNetwork.coverage" NAME="neuralNetwork Coverage Results" MODIFIED="1741059308615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pyrosim" />
     <SUITE FILE_PATH="coverage/mybots$robot.coverage" NAME="robot Coverage Results" MODIFIED="1740449588431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mybots$hillclimber.coverage" NAME="hillclimber Coverage Results" MODIFIED="1742326464119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
