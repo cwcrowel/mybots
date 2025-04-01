@@ -10,7 +10,7 @@ import constants as c
 
 class SOLUTION:
     def __init__(self, nextAvailableID):
-        self.weights = numpy.random.rand(c.numSensorNeurons, c.numMotorNeurons)
+        self.weights = (numpy.random.rand(c.numSensorNeurons, c.numMotorNeurons))*2 - 1
         self.weights = self.weights * 2 - 1
         self.myID = nextAvailableID
 
@@ -110,7 +110,7 @@ class SOLUTION:
     def Mutate(self):
         randRow = random.randint(0, c.numSensorNeurons - 1)
         randCol = random.randint(0, c.numMotorNeurons - 1)
-        self.weights[randRow][randCol] = random.random()*c.numMotorNeurons - 1
+        self.weights[randRow][randCol]=random.random()*2 - 1
 
     # TODO: fix this?
     def Set_ID(self):
