@@ -54,7 +54,48 @@ class ROBOT:
         basePosition = basePositionAndOrientation[0]
         xCoordinateOfLinkZero = basePosition[0]
 
+        lower_leg_sensors = ["FrontLowerLeg", "BackLowerLeg", "LeftLowerLeg", "RightLowerLeg"]
+        fll_sensor_values = []
+        bll_sensor_values = []
+        lll_sensor_values = []
+        rll_sensor_values = []
+
+        for sensorName in lower_leg_sensors:
+            if sensorName == "FrontLowerLeg":
+                fll_sensor_values.append(self.sensors.get(sensorName).values)
+            elif sensorName == "BackLowerLeg":
+                bll_sensor_values.append(self.sensors.get(sensorName).values)
+            elif sensorName == "LeftLowerLeg":
+                lll_sensor_values.append(self.sensors.get(sensorName).values)
+            elif sensorName == "RightLowerLeg":
+                rll_sensor_values.append(self.sensors.get(sensorName).values)
+
+        # fll_mean = numpy.mean(numpy.array(fll_sensor_values))
+        # bll_mean = numpy.mean(numpy.array(bll_sensor_values))
+        # lll_mean = numpy.mean(numpy.array(lll_sensor_values))
+        # rll_mean = numpy.mean(numpy.array(rll_sensor_values))
+        fll_sensor_values = numpy.concatenate(fll_sensor_values).tolist() if fll_sensor_values else []
+        bll_sensor_values = numpy.concatenate(bll_sensor_values).tolist() if bll_sensor_values else []
+        lll_sensor_values = numpy.concatenate(lll_sensor_values).tolist() if lll_sensor_values else []
+        rll_sensor_values = numpy.concatenate(rll_sensor_values).tolist() if rll_sensor_values else []
+        min_length = min(len(fll_sensor_values), len(bll_sensor_values), len(lll_sensor_values), len(rll_sensor_values))
+        air = 0
+        ground = 0
+
+        #total_mean = (fll_mean + bll_mean + lll_mean + rll_mean)/4
+        for i in range(min_length):
+            if (fll_sensor_values[i] == -1.0) and (bll_sensor_values[i] == -1.0) and (lll_sensor_values[i] == -1.0) and (rll_sensor_values[i] == -1.0):
+                air += 1
+            elif (fll_sensor_values[i] == 1.0) and (bll_sensor_values[i] == 1.0) and (lll_sensor_values[i] == 1.0) and (rll_sensor_values[i] == 1.0):
+                ground += 1
+            else:
+                pass
+
+
+
         with open(f'tmp{solutionID}.txt', 'w') as f:
-            f.write(str(xCoordinateOfLinkZero))
+            f.write(f'\n# of time steps where all touch sensors = -1: {air}\n# of time steps where all touch sensors = +1: {ground}')
+            # f.write(str(xCoordinateOfLinkZero))
 
         os.rename("tmp"+str(solutionID)+".txt" , "fitness"+str(solutionID)+".txt")
+

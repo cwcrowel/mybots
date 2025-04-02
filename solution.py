@@ -39,8 +39,22 @@ class SOLUTION:
             time.sleep(0.01)
 
         f = open(f'fitness{str(self.myID)}.txt', 'r')
-        self.fitness = float(f.read().strip())
-        print(self.fitness)
+        # self.fitness = float(f.read().strip())
+        # print(self.fitness)
+        lines = f.readlines()
+        air = 0
+        ground = 0
+
+        for line in lines:
+            if "all touch sensors = -1" in line:
+                air = int(line.split(":")[-1].strip())
+            elif "all touch sensors = +1" in line:
+                ground = int(line.split(":")[-1].strip())
+
+        self.fitness = min(air, ground)
+        print(f"Air: {air}, Ground: {ground}, Fitness: {self.fitness}")
+
+
         f.close()
         os.system(f"rm fitness{str(self.myID)}.txt")
 
@@ -112,6 +126,6 @@ class SOLUTION:
         randCol = random.randint(0, c.numMotorNeurons - 1)
         self.weights[randRow][randCol]=random.random()*2 - 1
 
-    # TODO: fix this?
+
     def Set_ID(self):
         self.myID
