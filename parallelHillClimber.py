@@ -42,17 +42,17 @@ class PARALLEL_HILL_CLIMBER:
 
     def Select(self):
         for key in self.parents.keys():
-            if self.children[key].fitness < self.parents[key].fitness:  # Changed back to < per steps 8-10 in Final Project to prefer higher fitness values
+            if self.children[key].fitness > self.parents[key].fitness:  # Changed to > per steps 8-10 in Final Project to prefer higher fitness values
                 self.parents[key] = self.children[key]
 
     def Print(self):
         print("\nparent = " + str(self.parent.fitness) + " and child = " + str(self.child.fitness))
 
     def Show_Best(self):
-        lowest = 1000.0    # Changed back to 1000 per steps 8-10 in Final Project
+        lowest = -1000.0    # Changed to -1000 per steps 8-10 in Final Project
         lowest_parent = None
         for parent in self.parents.values():
-            if parent.fitness < lowest: # Changed back to < per steps 8-10 in Final Project
+            if parent.fitness > lowest: # Changed to > per steps 8-10 in Final Project
                 lowest = parent.fitness
                 lowest_parent = parent
         print('Final parent fitness: ', lowest_parent.fitness)

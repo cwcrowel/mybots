@@ -51,7 +51,7 @@ class SOLUTION:
             elif "all touch sensors = +1" in line:
                 ground = int(line.split(":")[-1].strip())
 
-        self.fitness = min(air, ground)
+        self.fitness = abs(ground - air)
         print(f"Air: {air}, Ground: {ground}, Fitness: {self.fitness}")
 
 
