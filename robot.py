@@ -1,8 +1,6 @@
 from sensor import SENSOR
 from motor import MOTOR
 import pybullet as p
-import time
-import pybullet_data
 
 import pyrosim.pyrosim as pyrosim
 import numpy
@@ -15,6 +13,7 @@ class ROBOT:
         self.robotId = p.loadURDF("body.urdf")
         self.nn = NEURAL_NETWORK((f"brain{solutionID}.nndf"))
         os.system(f"rm brain{solutionID}.nndf")
+        self.heights = []
 
     def Prepare_To_Sense(self):
         self.sensors = {}
@@ -25,6 +24,11 @@ class ROBOT:
     def Sense(self, t):
         for i in self.sensors:
             self.values = self.sensors.get(i).Get_Value(t)
+
+        # Get robot height
+        position, temp = p.getBasePositionAndOrientation(self.robotId)
+        height = position[2]
+        self.heights.append(height)
 
     def Prepare_To_Act(self):
         self.motors = {}
@@ -70,10 +74,6 @@ class ROBOT:
             elif sensorName == "RightLowerLeg":
                 rll_sensor_values.append(self.sensors.get(sensorName).values)
 
-        # fll_mean = numpy.mean(numpy.array(fll_sensor_values))
-        # bll_mean = numpy.mean(numpy.array(bll_sensor_values))
-        # lll_mean = numpy.mean(numpy.array(lll_sensor_values))
-        # rll_mean = numpy.mean(numpy.array(rll_sensor_values))
         fll_sensor_values = numpy.concatenate(fll_sensor_values).tolist() if fll_sensor_values else []
         bll_sensor_values = numpy.concatenate(bll_sensor_values).tolist() if bll_sensor_values else []
         lll_sensor_values = numpy.concatenate(lll_sensor_values).tolist() if lll_sensor_values else []
@@ -82,7 +82,6 @@ class ROBOT:
         air = 0
         ground = 0
 
-        #total_mean = (fll_mean + bll_mean + lll_mean + rll_mean)/4
         for i in range(min_length):
             if (fll_sensor_values[i] == -1.0) and (bll_sensor_values[i] == -1.0) and (lll_sensor_values[i] == -1.0) and (rll_sensor_values[i] == -1.0):
                 air += 1
@@ -91,11 +90,10 @@ class ROBOT:
             else:
                 pass
 
-
+        avg_height = sum(self.heights) / len(self.heights)
 
         with open(f'tmp{solutionID}.txt', 'w') as f:
-            f.write(f'\n# of time steps where all touch sensors = -1: {air}\n# of time steps where all touch sensors = +1: {ground}')
-            # f.write(str(xCoordinateOfLinkZero))
+            f.write(f'\n# of time steps where all touch sensors = -1: {air}\n# of time steps where all touch sensors = +1: {ground}\nAverage Height: {avg_height:.3f}')
 
         os.rename("tmp"+str(solutionID)+".txt" , "fitness"+str(solutionID)+".txt")
 

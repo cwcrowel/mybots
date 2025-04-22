@@ -1,6 +1,5 @@
-import pybullet as p
 import time
-import pybullet_data
+
 
 import pyrosim.pyrosim as pyrosim
 import numpy
@@ -13,20 +12,6 @@ class SOLUTION:
         self.weights = (numpy.random.rand(c.numSensorNeurons, c.numMotorNeurons))*2 - 1
         self.weights = self.weights * 2 - 1
         self.myID = nextAvailableID
-
-    # def Evaluate(self, directOrGUI):
-    #     self.Create_World()
-    #     self.Create_Body()
-    #     self.Create_Brain(self.myID)
-    #     os.system(f"python3 simulate.py {directOrGUI} {str(self.myID)} &")
-    #
-    #     while not os.path.exists(f'fitness{str(self.myID)}.txt'):
-    #         time.sleep(0.01)
-    #
-    #     f = open(f'fitness{str(self.myID)}.txt', 'r')
-    #     self.fitness = float(f.read().strip())
-    #     print(self.fitness)
-    #     f.close()
 
     def Start_Simulation(self, directOrGUI):
         self.Create_World()
@@ -44,15 +29,18 @@ class SOLUTION:
         lines = f.readlines()
         air = 0
         ground = 0
+        avg_height = 0
 
         for line in lines:
             if "all touch sensors = -1" in line:
                 air = int(line.split(":")[-1].strip())
             elif "all touch sensors = +1" in line:
                 ground = int(line.split(":")[-1].strip())
+            elif "Average Height" in line:
+                avg_height = float(line.split(":")[-1].strip())
 
-        self.fitness = abs(ground - air)
-        print(f"Air: {air}, Ground: {ground}, Fitness: {self.fitness}")
+        self.fitness = abs(ground - air) * avg_height
+        print(f"Air: {air}, Ground: {ground}, Avg Height: {avg_height:.3f}, Fitness: {self.fitness}")
 
 
         f.close()

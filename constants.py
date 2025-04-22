@@ -8,8 +8,8 @@ sleepTime = 0.0001
 
 targetAngles = numpy.linspace(-numpy.pi, numpy.pi, 1000)
 
-numberOfGenerations = 10
-populationSize = 10
+numberOfGenerations = 12
+populationSize = 12
 
 numSensorNeurons = 9
 numMotorNeurons = 8
